@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CREPES & WAFFLES | Comportamiento del Consumidor</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+    html { scroll-behavior: smooth; }
+    :root {
+      --marron: #8B4513;
+      --naranja: #D2691E;
+      --dorado: #FFD700;
+      --cafe-oscuro: #5D4037;
+    }
+    .ventana {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      color: #fff;
+      text-align: center;
+    }
+    h1 { font-size: 2.2rem; margin-bottom: 1rem; }
+    h2 { font-size: 1.4rem; margin-bottom: 1rem; }
+    p, li { font-size: 1rem; max-width: 850px; line-height: 1.7; margin-bottom: 0.8rem; }
+    ul { list-style: none; padding: 0; }
+    .resaltado { color: var(--dorado); font-weight: bold; }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: var(--marron);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .tarjeta {
+      background: rgba(255,255,255,0.95);
+      color: var(--cafe-oscuro);
+      padding: 1.5rem;
+      border-radius: 15px;
+      margin: 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+      width: 100%;
+      max-width: 900px;
+      margin-top: 1rem;
+    }
+    .nav {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      z-index: 100;
+    }
+    .nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0.2rem;
+      background: rgba(93, 64, 55, 0.6);
+      padding: 0.5rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      display: inline-block;
+    }
+    #v1 { background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%); }
+    #v2 { background: linear-gradient(135deg, #A0522D 0%, #CD853F 100%); }
+    #v3 { background: linear-gradient(135deg, #DEB887 0%, #F5DEB3 100%); color: var(--cafe-oscuro); }
+    #v4 { background: linear-gradient(135deg, #D2B48C 0%, #F4A460 100%); color: var(--cafe-oscuro); }
+    #v5 { background: linear-gradient(135deg, #5D4037 0%, #8D6E63 100%); }
+    .autores { font-size: 0.9rem; opacity: 0.9; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="#v1">Inicio</a>
+    <a href="#v2">Consumidor</a>
+    <a href="#v3">Investigación</a>
+    <a href="#v4">Estrategia</a>
+    <a href="#v5">Proyecto</a>
+  </nav>
+
+  <section id="v1" class="ventana">
+    <h1>🧇 CREPES & WAFFLES 🥞</h1>
+    <h2>Comportamiento del Consumidor</h2>
+    <p>Fundada en 1980 en Bogotá por Beatriz Fernández y Eduardo Macía. Emprendimiento universitario convertido en una de las cadenas más reconocidas de Colombia.</p>
+    <p class="resaltado">✅ Calidad y experiencia familiar<br>✅ Enfoque social: empleo para mujeres y apoyo a comunidades productoras<br>✅ Más que comida: momentos para compartir</p>
+    <p class="autores">Sahra Sofía Peña • Sara Sofía Perilla • Sara Ospina<br>Universidad ECCI — Prof. Edwin Yepes</p>
+    <a href="#v2" class="btn">Conocer al Consumidor 👇</a>
+  </section>
+
+  <section id="v2" class="ventana">
+    <h1>👤 ¿Quién es nuestro consumidor?</h1>
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>🎯 Segmento Objetivo</h3>
+        <p>Familias de clase media y media-alta, entre 18 y 45 años, que buscan experiencias agradables a un precio asequible.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>💛 Buyer Persona: Paola</h3>
+        <p>40 años, profesional, madre de 3 hijos. Busca variedad, comodidad y tiempo de calidad en familia. Valora marcas reconocidas y responsables.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>🧠 Factores de Influencia</h3>
+        <ul>
+          <li>🌍 <strong>Culturales:</strong> Tradición de compartir en familia</li>
+          <li>👨‍👩‍👧‍👦 <strong>Sociales:</strong> Recomendaciones y redes sociales</li>
+          <li>💰 <strong>Personales:</strong> Ingresos, estilo de vida</li>
+          <li>❤️ <strong>Psicológicos:</strong> Comodidad, confianza, satisfacción</li>
+        </ul>
+      </div>
+      <div class="tarjeta">
+        <h3>📱 Comportamiento Digital</h3>
+        <p>Usa Instagram, Facebook y TikTok. La <strong>prueba social</strong> guía su decisión: reseñas, recomendaciones y experiencias compartidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="v3" class="ventana">
+    <h1>📊 Investigación: Lo que descubrimos</h1>
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>⭐ Lo más valorado</h3>
+        <p><strong>Experiencia familiar:</strong> 77% califica 5/5</p>
+        <p><strong>Calidad de productos:</strong> 72% califica 5/5</p>
+        <p><strong>Responsabilidad social:</strong> 60% califica 5/5</p>
+      </div>
+      <div class="tarjeta">
+        <h3>⚠️ Oportunidades de Mejora</h3>
+        <p>🔹 Reducir tiempos de espera y filas</p>
+        <p>🔹 Fortalecer presencia en redes sociales</p>
+        <p>🔹 Ampliar menú y promociones</p>
+        <p>🔹 Implementar sistema de reservas</p>
+      </div>
+    </div>
+    <div class="tarjeta" style="max-width: 800px;">
+      <h3>🔍 Conclusiones</h3>
+      <p>Los clientes no solo consumen alimentos: buscan <strong>compartir momentos especiales</strong>. La marca es percibida como confiable, cálida y comprometida socialmente. El principal reto: los tiempos de espera afectan la experiencia.</p>
+    </div>
+  </section>
+
+  <section id="v4" class="ventana">
+    <h1>🚀 Estrategia: #ReservaTuMomento</h1>
+    <p style="font-size: 1.2rem; font-weight: bold; color: var(--marron);">"Los momentos especiales no deberían esperar"</p>
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>💡 Propuesta de Valor</h3>
+        <p>Planifica y disfruta tus celebraciones sin filas ni esperas. Ambiente acogedor, gastronomía de calidad y atención personalizada.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>📲 ¿Cómo funciona?</h3>
+        <p>1️⃣ Elige fecha y horario<br>2️⃣ Indica número de personas<br>3️⃣ Selecciona motivo de la visita<br>4️⃣ Recibe confirmación ✅</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="tarjeta">
+        <h3>🎁 Beneficios</h3>
+        <p>✅ Mesa lista al llegar<br>✅ Atención prioritaria<br>✅ Recordatorio automático<br>✅ Incentivos exclusivos</p>
+      </div>
+      <div class="tarjeta">
+        <h3>📢 Canales</h3>
+        <p>📸 Instagram • 🎵 TikTok • 🌐 Web<br>💌 Correo • 📱 WhatsApp</p>
+        <p style="margin-top: 0.5rem; font-weight: bold;">"Reserva hoy los momentos que recordarás mañana"</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="v5" class="ventana">
+    <h1>🎓 Conclusiones del Proyecto</h1>
+    <div class="tarjeta" style="max-width: 800px;">
+      <p>El consumidor de Crepes & Waffles elige la marca no solo por la comida, sino por <strong>la experiencia, la confianza y los valores</strong> que representa.</p>
+      <p>La estrategia <strong>#ReservaTuMomento</strong> transforma la espera en una fortaleza: permite planificar celebraciones y refuerza la conexión emocional con la familia.</p>
+      <p style="margin-top: 1rem; font-style: italic; font-size: 1.1rem;">"La vida está llena de momentos especiales... ¡resérvalos con nosotros!" 🧇💛</p>
+    </div>
+    <div style="margin-top: 2rem;">
+      <p style="opacity: 0.8;">Proyecto de Aula — Comportamiento del Consumidor<br>Universidad ECCI • Septiembre 2026</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem;">Sahra Sofía Peña Otalora | Sara Sofía Perilla Lara | Sara Ospina Galán</p>
+    </div>
+    <a href="#v1" class="btn">⬆️ Volver al inicio</a>
+  </section>
+</body>
+</html>
